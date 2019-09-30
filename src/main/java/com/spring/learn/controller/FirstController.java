@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FirstController {
     @Autowired
     UserService userService;
+
+    private String ss;
+    
     @RequestMapping("index")
     public String index(ModelMap map){
         User user=userService.getUserById("1");
